@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/bttn_with_border.xml" value="0.2965" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/button_registro.xml" value="0.2965" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/edit_text.xml" value="0.2965" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/lnr_with_border.xml" value="0.2965" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/round_layout.xml" value="0.2965" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/roundtext.xml" value="0.2965" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/style_textview.xml" value="0.2965" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.23293172690763053" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_ingredientes.xml" value="0.29257246376811596" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_login.xml" value="0.29257246376811596" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_main.xml" value="0.29257246376811596" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_registro.xml" value="0.22" />
         <entry key="..\:/Users/david/AndroidStudioProjects/GreenCo/app/src/main/res/layout/activity_ingredientes.xml" value="0.2" />
         <entry key="..\:/Users/david/AndroidStudioProjects/GreenCo/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/david/Documents/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/bttn___with_border.xml" value="0.2305" />

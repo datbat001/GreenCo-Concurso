@@ -204,7 +204,8 @@
             android:textColor="@color/rose"
             android:textSize="16sp"
             android:textStyle="bold"
-            tools:layout_editor_absoluteX="68dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="610dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

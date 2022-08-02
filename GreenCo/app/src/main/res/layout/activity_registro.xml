@@ -132,7 +132,7 @@
             tools:layout_editor_absoluteX="21dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName7"
+            android:id="@+id/fecha"
             android:layout_width="280dp"
             android:layout_height="42dp"
             android:background="@drawable/roundtext"
@@ -183,7 +183,7 @@
             tools:layout_editor_absoluteY="448dp" />
 
         <EditText
-            android:id="@+id/rpassword"
+            android:id="@+id/password2"
             android:layout_width="280dp"
             android:layout_height="42dp"
             android:background="@drawable/roundtext"
@@ -196,17 +196,16 @@
             tools:layout_editor_absoluteY="528dp" />
 
         <Button
-            android:id="@+id/button3"
-            android:layout_width="194dp"
-            android:layout_height="38dp"
-            android:background="@drawable/button_registro"
-            android:text="REGISTRAR"
+            android:layout_width="239dp"
+            android:layout_height="52dp"
+            android:backgroundTint="@color/purple_black"
+            android:text="Registrar"
             android:textColor="@color/rose"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="610dp" />
+            app:cornerRadius="10dp"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="604dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

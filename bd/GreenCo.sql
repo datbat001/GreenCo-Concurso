@@ -13,7 +13,7 @@ CREATE TABLE Productos (
 	idProducto INT NOT NULL AUTO_INCREMENT,
 	nomProd char(64),
 	-- precio float, ESTE VALOR TIENE QUE SER CALCULADO, POR QUE ES PROVISTO POR MULTIPLES PROVEEDORES ADEMÁS DEBERÁS DE MOSTRAR UN RANGO DE PRECIOS
-	descripcion varchar(128),	
+	descripcion varchar(512),	
 	existencia int comment "ES LA SUMA DE TODOS LOS PRODUCTOS",
 	PRIMARY KEY (IdProducto)
 );
@@ -110,7 +110,7 @@ CREATE TABLE Usuarios(
 
 CREATE TABLE RolesDeUsuarios(
 	idRol int auto_increment,
-    rolUsuario char(5) comment "usuario, vendMin, tienda, admin, superadmin",    
+    rolUsuario char(12) comment "usuario, vendMin, tienda, admin, superadmin",    
 	PRIMARY KEY (idRol)
 );
 
@@ -125,7 +125,7 @@ create table UsuariosRoles(
 create table FormasDeContacto(
    idContacto int, 
    formaDeContacto char(128),
-   tipoContacto char(4) comment "Tel, Cel, Mail, Twit, Face...",
+   TipoContacto char(16) comment "Tel, Cel, Mail, Twit, Face...",
    primary key (idContacto, formaDeContacto),
    foreign key (idContacto) references Usuarios (idUsuario)
 );
@@ -465,13 +465,7 @@ insert into Productos (nomProd, descripcion, existencia)
 values ('Chips - Assorted', 'Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui.', 47);
 
 SELECT * FROM Tags;
-create table Tags(
-   idTag int not null auto_increment,
-   idCategoria int not null,
-   nomTag char(16) not null unique,
-   primary key (idTag),
-   foreign key (idCategoria) references Categorias (idCategoria)
-);
+
 /*INSERTS DE LA TABLA TAGS*/
 INSERT INTO greenco_gps.tags (idCategoria,nomTag)
 values (2,'orgánico');

@@ -94,7 +94,8 @@
             android:layout_marginEnd="40dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:srcCompat="@drawable/check"
-            tools:layout_editor_absoluteY="320dp" />
+            tools:layout_editor_absoluteY="320dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView31"
@@ -104,7 +105,8 @@
             android:textColor="#FFFFFF"
             android:textStyle="normal|bold"
             tools:layout_editor_absoluteX="88dp"
-            tools:layout_editor_absoluteY="419dp" />
+            tools:layout_editor_absoluteY="419dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView32"

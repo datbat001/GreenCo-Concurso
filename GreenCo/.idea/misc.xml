@@ -3,20 +3,32 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< Updated upstream
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/border_style.xml" value="0.3525" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/border_style2.xml" value="0.3525" />
+=======
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/border_style.xml" value="0.1915" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/border_style2.xml" value="0.1935" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/bttn_with_border.xml" value="0.1935" />
+>>>>>>> Stashed changes
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/button_registro.xml" value="0.2965" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/flecha.xml" value="0.2965" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.23293172690763053" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout-w936dp/activity_login.xml" value="0.271875" />
+<<<<<<< Updated upstream
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_carrito.xml" value="0.3625" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_carrito2.xml" value="0.3484375" />
+=======
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_carrito.xml" value="0.33" />
+>>>>>>> Stashed changes
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_ingredientes.xml" value="0.3625" />
-        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_login.xml" value="0.22" />
-        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_loginr.xml" value="0.17135416666666667" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_menu.xml" value="0.33" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_menup.xml" value="0.33" />
-        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_registro.xml" value="0.25" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_registro.xml" value="0.33" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_registro2.xml" value="0.25" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/bttn_with_border.xml" value="0.2965" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/button_registro.xml" value="0.2965" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/edit_text.xml" value="0.2965" />

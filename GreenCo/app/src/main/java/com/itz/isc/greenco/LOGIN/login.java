@@ -37,12 +37,12 @@ public class login extends AppCompatActivity {
         usuario = findViewById(R.id.CorreoNick);
         password = findViewById(R.id.passwordlogin);
 
-        btnregistrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                registro(view);
-            }
-        });
+        //btnregistrar.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+           // public void onClick(View view) {
+           //     registro(view);
+           // }
+       // });
 
     }
 

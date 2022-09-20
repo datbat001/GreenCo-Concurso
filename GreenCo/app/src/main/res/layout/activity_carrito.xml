@@ -25,7 +25,14 @@
         android:id="@+id/imageView12"
         android:layout_width="62dp"
         android:layout_height="62dp"
+<<<<<<< Updated upstream
         app:srcCompat="@drawable/greencologo"
+=======
+
+
+        app:srcCompat="@drawable/greencologo"
+
+>>>>>>> Stashed changes
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="58dp" />
 
@@ -65,9 +72,10 @@
             app:strokeWidth="2dp" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="328dp"
-            android:layout_height="385dp"
+            android:layout_width="334dp"
+            android:layout_height="382dp"
             android:layout_marginEnd="1dp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.444"

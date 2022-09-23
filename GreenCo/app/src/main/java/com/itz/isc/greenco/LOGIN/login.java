@@ -27,8 +27,10 @@ public class login extends AppCompatActivity {
 
     EditText usuario, password;
     Button btnregistrar;
+    Button btnlogin;
     String user, pass;
     String url= "https://androidexd.000webhostapp.com/loginphp/RegistrarLogin.php";
+    //'https://androidexd.000webhostapp.com/loginphp/showProducts.php'
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,13 +38,24 @@ public class login extends AppCompatActivity {
 
         usuario = findViewById(R.id.CorreoNick);
         password = findViewById(R.id.passwordlogin);
+        btnregistrar=findViewById((R.id.button4));
+        btnlogin = findViewById(R.id.ingresaButton);
 
-        //btnregistrar.setOnClickListener(new View.OnClickListener() {
-          //  @Override
-           // public void onClick(View view) {
-           //     registro(view);
-           // }
-       // });
+        btnlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Login(view);
+
+            }
+        });
+
+        btnregistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                registro(view);
+            }
+        });
 
     }
 
@@ -71,7 +84,7 @@ public class login extends AppCompatActivity {
                 public void onResponse(String response) {
                     progressDialog.dismiss();
 
-                    if (response.equalsIgnoreCase("Ingresaste correctamente")) {
+                    if (response.equalsIgnoreCase("Ingreso exitosamente")) {
                         usuario.setText("");
                         password.setText("");
 
@@ -106,7 +119,7 @@ public class login extends AppCompatActivity {
         }
     }
     public void registro(View view) {
-        startActivity(new Intent(login.this, insertar.class));
+        startActivity(new Intent(getApplicationContext(), insertar.class));
         finish();
     }
 

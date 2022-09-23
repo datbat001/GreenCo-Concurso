@@ -2,19 +2,12 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
 
     <stroke
-<<<<<<< Updated upstream
-        android:width="4sp"
-=======
         android:width="3sp"
->>>>>>> Stashed changes
         android:color="@color/purple_black"
         />
     <corners
         android:radius="5dp"
-<<<<<<< Updated upstream
-=======
         android:color="@color/white"
->>>>>>> Stashed changes
         />
 
 </shape>

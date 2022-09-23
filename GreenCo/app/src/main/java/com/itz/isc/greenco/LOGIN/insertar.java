@@ -42,6 +42,7 @@ public class insertar extends AppCompatActivity {
         pass1 = findViewById(R.id.password1);
         pass2 = findViewById(R.id.password2);
 
+        btninsertar = findViewById(R.id.btn_registro);
         btninsertar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -133,7 +134,7 @@ public class insertar extends AppCompatActivity {
                     Map<String,String> params = new HashMap<String,String>();
                     params.put("nomUsuario",nom);
                     params.put("apellidos",ap);
-                    params.put("correo",dir);
+                    params.put("correo",email);
                     params.put("fechaNacimiento",FN);
                     params.put("datosExtraDireccion",dir);
                     params.put("nickname",nickn);

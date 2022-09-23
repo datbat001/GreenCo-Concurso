@@ -27,8 +27,15 @@ public class login extends AppCompatActivity {
 
     EditText usuario, password;
     Button btnregistrar;
+<<<<<<< HEAD
     String user, pass;
     String url= "https://androidexd.000webhostapp.com/loginphp/RegistrarLogin.php";
+=======
+    Button btnlogin;
+    String user, pass;
+    String url= "https://androidexd.000webhostapp.com/loginphp/RegistrarLogin.php";
+    //'https://androidexd.000webhostapp.com/loginphp/showProducts.php'
+>>>>>>> ulises
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +43,7 @@ public class login extends AppCompatActivity {
 
         usuario = findViewById(R.id.CorreoNick);
         password = findViewById(R.id.passwordlogin);
+<<<<<<< HEAD
 
         //btnregistrar.setOnClickListener(new View.OnClickListener() {
            // @Override
@@ -43,6 +51,26 @@ public class login extends AppCompatActivity {
              //   registro(view);
            // }
        // });
+=======
+        btnregistrar=findViewById((R.id.button4));
+        btnlogin = findViewById(R.id.ingresaButton);
+
+        btnlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Login(view);
+
+            }
+        });
+
+        btnregistrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                registro(view);
+            }
+        });
+>>>>>>> ulises
 
     }
 
@@ -71,7 +99,11 @@ public class login extends AppCompatActivity {
                 public void onResponse(String response) {
                     progressDialog.dismiss();
 
+<<<<<<< HEAD
                     if (response.equalsIgnoreCase("Ingresaste correctamente")) {
+=======
+                    if (response.equalsIgnoreCase("Ingreso exitosamente")) {
+>>>>>>> ulises
                         usuario.setText("");
                         password.setText("");
 
@@ -106,7 +138,11 @@ public class login extends AppCompatActivity {
         }
     }
     public void registro(View view) {
+<<<<<<< HEAD
         startActivity(new Intent(login.this, insertar.class));
+=======
+        startActivity(new Intent(getApplicationContext(), insertar.class));
+>>>>>>> ulises
         finish();
     }
 

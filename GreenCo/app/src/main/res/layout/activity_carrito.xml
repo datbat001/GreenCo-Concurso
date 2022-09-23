@@ -25,6 +25,7 @@
         android:id="@+id/imageView12"
         android:layout_width="62dp"
         android:layout_height="62dp"
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         app:srcCompat="@drawable/greencologo"
 =======
@@ -33,6 +34,11 @@
         app:srcCompat="@drawable/greencologo"
 
 >>>>>>> Stashed changes
+=======
+
+        app:srcCompat="@drawable/greencologo"
+
+>>>>>>> ulises
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="58dp" />
 

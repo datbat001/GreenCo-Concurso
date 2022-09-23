@@ -25,7 +25,11 @@ import java.util.Map;
 public class insertar extends AppCompatActivity {
 
     EditText nombre,apellidos,correo,fechaN,direccion,nickname,pass1,pass2;
+<<<<<<< HEAD
     Button bttninsertar;
+=======
+    Button btninsertar;
+>>>>>>> ulises
     String nom,ap,email,FN,dir,nickn,pass,Rpass;
     String url= "https://androidexd.000webhostapp.com/loginphp/insertar.php";
     @Override
@@ -42,10 +46,17 @@ public class insertar extends AppCompatActivity {
         pass1 = findViewById(R.id.password1);
         pass2 = findViewById(R.id.password2);
 
+<<<<<<< HEAD
         bttninsertar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
+=======
+        btninsertar = findViewById(R.id.btn_registro);
+        btninsertar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+>>>>>>> ulises
                 Register(view);
             }
         });
@@ -134,7 +145,11 @@ public class insertar extends AppCompatActivity {
                     Map<String,String> params = new HashMap<String,String>();
                     params.put("nomUsuario",nom);
                     params.put("apellidos",ap);
+<<<<<<< HEAD
                     params.put("correo",dir);
+=======
+                    params.put("correo",email);
+>>>>>>> ulises
                     params.put("fechaNacimiento",FN);
                     params.put("datosExtraDireccion",dir);
                     params.put("nickname",nickn);

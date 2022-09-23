@@ -2,16 +2,23 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
 
     <stroke
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ulises
         android:width="3sp"
         android:color="@color/purple_black"
         />
     <corners
         android:radius="5dp"
+<<<<<<< HEAD
 
         android:color="@color/white"
 
+=======
+        android:color="@color/white"
+>>>>>>> ulises
         />
 
 </shape>

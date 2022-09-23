@@ -47,22 +47,6 @@
                 android:layout_weight="1"
                 android:src="@drawable/logo2" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="5"
-                android:text="@string/Iniciar_Sesion"
-                android:textAlignment="center"
-                android:textColor="#000000" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:text="@string/Register"
-                android:textAlignment="center"
-                android:textColor="#000000" />
-
             <ImageView
                 android:layout_width="105dp"
                 android:layout_height="51dp"
@@ -112,7 +96,7 @@
             android:id="@+id/textView3"
             android:layout_width="173dp"
             android:layout_height="33dp"
-            android:text="Servicios"
+            android:text="Experiencias"
             android:textAlignment="center"
             android:textColor="#49274A"
             app:layout_constraintEnd_toEndOf="@+id/imageView3"

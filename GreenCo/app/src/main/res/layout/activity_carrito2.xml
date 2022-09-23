@@ -8,7 +8,17 @@
 
     <ImageView
         android:id="@+id/imagen_carrito"
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+
+        android:layout_width="57dp"
+        android:layout_height="54dp"
+        app:srcCompat="@drawable/baguette"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+>>>>>>> ulises
         android:layout_width="59dp"
         android:layout_height="59dp"
         app:srcCompat="@drawable/baguette"
@@ -29,6 +39,7 @@
         tools:layout_editor_absoluteY="43dp" />-->
 
 >>>>>>> Stashed changes
+
 
     <TextView
         android:id="@+id/nombre_producto"

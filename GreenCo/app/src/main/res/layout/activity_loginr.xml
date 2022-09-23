@@ -62,7 +62,11 @@
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
                 android:text="Ingresa tu usuario o correo"
+=======
+                android:text="Ingresa tu usuario"
+>>>>>>> ulises
                 android:textColor="#4A2748"
                 android:textSize="16sp"
                 android:textStyle="bold"
@@ -80,9 +84,16 @@
                 android:background="@drawable/edittext_with_border"
                 android:ems="10"
                 android:inputType="textEmailAddress"
+<<<<<<< HEAD
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.364"
+=======
+                android:textColor="@color/purple_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.383"
+>>>>>>> ulises
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView12"
                 app:layout_constraintVertical_bias="0.0" />
@@ -109,6 +120,10 @@
                 android:background="@drawable/edittext_with_border"
                 android:ems="10"
                 android:inputType="textPassword"
+<<<<<<< HEAD
+=======
+                android:textColor="@color/purple_black"
+>>>>>>> ulises
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView13"
@@ -135,13 +150,21 @@
                 android:id="@+id/button4"
                 android:layout_width="219dp"
                 android:layout_height="58dp"
+<<<<<<< HEAD
                 android:layout_marginBottom="24dp"
+=======
+                android:layout_marginBottom="36dp"
+>>>>>>> ulises
                 android:backgroundTint="@color/white"
                 android:text="Registrate aqui"
                 android:textColor=" #009455"
                 android:textSize="16sp"
                 android:textStyle="bold"
+<<<<<<< HEAD
                 android:onClick="Register"
+=======
+
+>>>>>>> ulises
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.502"

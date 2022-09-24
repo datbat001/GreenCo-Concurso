@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/drawable/borde_gris.xml" value="0.2155" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/drawable/homeproductos.xml" value="0.2075" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/drawable/round_button.xml" value="0.2075" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/drawable/round_button_carnes.xml" value="0.2075" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/drawable/round_button_congelados.xml" value="0.2075" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/drawable/round_button_experiencias.xml" value="0.2075" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/drawable/round_button_ingredientes.xml" value="0.2075" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/drawable/round_button_mariscos.xml" value="0.2075" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/drawable/round_button_panaderia.xml" value="0.2075" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/drawable/round_button_productos.xml" value="0.2075" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/drawable/round_layout.xml" value="0.2075" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/drawable/roundtext.xml" value="0.2075" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/layout/activity_carrito.xml" value="0.12864583333333332" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/layout/activity_carrito2.xml" value="0.25" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/layout/activity_loginr.xml" value="0.209375" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/layout/activity_menup.xml" value="0.209375" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/layout/activity_perfil.xml" value="0.209375" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/layout/activity_productos.xml" value="0.33" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/layout/activity_registro.xml" value="0.20425724637681159" />
+        <entry key="..\:/Users/david/Documents/GreenCo/app/src/main/res/layout/activity_verproducto.xml" value="0.20425724637681159" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

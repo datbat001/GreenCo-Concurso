@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".showProductos">
+
+        <TextView
+            android:id="@+id/GrenCo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E5C2F2"
+            android:text="@string/productos"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <!-- layout para home y carrito  -->
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/GrenCo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="1dp">
+
+            <ImageButton
+                android:id="@+id/btnHome"
+                android:layout_width="70dp"
+                android:layout_height="51dp"
+                android:background="@drawable/homeproductos" />
+
+            <TextView
+                android:id="@+id/categoria"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="hola mundo"
+                android:textAlignment="center"
+                android:textColor="@color/purple_black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="180dp"
+                tools:layout_editor_absoluteY="130dp" />
+
+            <ImageButton
+                android:id="@+id/carritoProductos"
+                android:layout_width="105dp"
+                android:layout_height="51dp"
+                android:layout_weight="1"
+                android:src="@drawable/shoppping_cart"
+                android:background="@color/white"/>
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/products_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

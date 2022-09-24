@@ -48,8 +48,8 @@ public class showProductos extends AppCompatActivity {
         btnShop = findViewById(R.id.carritoProductos);
 
         Intent intent = getIntent();
-        String str = intent.getStringExtra("Experiencias").toString();
-        Categoria.setText(str);
+       // String str = intent.getStringExtra("Experiencias").toString();
+        //Categoria.setText(str);
 
         productos = new ArrayList<>();
 

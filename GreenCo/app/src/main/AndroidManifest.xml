@@ -18,7 +18,7 @@
         tools:targetApi="30">
         <activity
             android:name=".Verproducto"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Carrito.carrito"
             android:exported="false" />
@@ -30,11 +30,11 @@
             android:exported="true">
 
             <!-- quitar comentario para que la app empiece en el login -->
-            <intent-filter>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter> -->
         </activity>
         <activity
             android:name=".showProductos"
@@ -42,6 +42,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
             <!--
         <intent-filter>

@@ -114,6 +114,7 @@
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginTop="28dp"
+                    android:text="@string/experiencias_str"
                     android:background="@drawable/experiencias1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.072"
@@ -121,7 +122,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/txtXp"
                     android:layout_width="173dp"
                     android:layout_height="33dp"
                     android:text="Experiencias"
@@ -137,13 +138,14 @@
                     android:layout_height="150dp"
                     android:layout_marginTop="32dp"
                     android:background="@drawable/ingredientes1"
+                    android:text="@string/ingredientes_str"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.072"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView3" />
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/txtIng"
                     android:layout_width="104dp"
                     android:layout_height="19dp"
                     android:text="Ingredientes"
@@ -159,13 +161,14 @@
                     android:layout_height="150dp"
                     android:layout_marginTop="32dp"
                     android:background="@drawable/productos1"
+                    android:text="@string/productos_str"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.073"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView8" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/txtProd"
                     android:layout_width="104dp"
                     android:layout_height="19dp"
                     android:text="Productos"
@@ -181,13 +184,14 @@
                     android:layout_height="150dp"
                     android:layout_marginTop="40dp"
                     android:background="@drawable/carnes1"
+                    android:text="@string/carnes_str"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.08"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView9" />
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/txtCar"
                     android:layout_width="104dp"
                     android:layout_height="19dp"
                     android:text="Carnes"
@@ -217,12 +221,13 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="44dp"
+                    android:text="@string/bebidas_str"
                     android:background="@drawable/round_button"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/txtBed"
                     android:layout_width="142dp"
                     android:layout_height="26dp"
                     android:text="Bebidas"
@@ -240,11 +245,12 @@
                     android:layout_marginTop="36dp"
                     android:layout_marginEnd="44dp"
                     android:background="@drawable/panaderia1"
+                    android:text="@string/panaderia_str"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/btnbeb" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/txtpan"
                     android:layout_width="104dp"
                     android:layout_height="19dp"
                     android:text="Panadería"
@@ -261,11 +267,12 @@
                     android:layout_marginTop="40dp"
                     android:layout_marginEnd="44dp"
                     android:background="@drawable/congelados1"
+                    android:text="@string/congelados_str"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/btnpan" />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/txtCon"
                     android:layout_width="104dp"
                     android:layout_height="19dp"
                     android:text="Congelados"
@@ -282,11 +289,12 @@
                     android:layout_marginTop="32dp"
                     android:layout_marginEnd="44dp"
                     android:background="@drawable/mariscos1"
+                    android:text="@string/mariscos_str"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/btncong" />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/txtMar"
                     android:layout_width="104dp"
                     android:layout_height="19dp"
                     android:text="Mariscos"

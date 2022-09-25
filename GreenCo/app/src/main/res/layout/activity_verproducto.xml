@@ -35,7 +35,7 @@
                 app:toolbarId="@+id/toolbar">
 
                 <ImageView
-                    android:id="@+id/img_prod"
+                    android:id="@+id/img_prodver"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -50,19 +50,19 @@
         </com.google.android.material.appbar.AppBarLayout>
 
         <TextView
-            android:id="@+id/nomProd"
+            android:id="@+id/nomProdver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
-            android:text="TextView"
+            android:text="Nombre del Producto"
             android:textColor="#4A2748"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/descProd"
+            android:id="@+id/descProdver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
@@ -78,7 +78,7 @@
             android:padding="15dp">
 
             <TextView
-                android:id="@+id/precProd"
+                android:id="@+id/precProdver"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -95,14 +95,14 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/buttonmenos"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@null"
                     android:text="-" />
 
                 <EditText
-                    android:id="@+id/editTextNumber"
+                    android:id="@+id/editTextNumberver"
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:background="@null"
@@ -113,7 +113,7 @@
                     android:textColor="#4A2748" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/buttonmas"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@null"
@@ -121,7 +121,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/buttonshopver"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="25dp"

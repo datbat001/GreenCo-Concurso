@@ -1,12 +1,11 @@
 package com.itz.isc.greenco;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,6 +14,8 @@ import com.itz.isc.greenco.Carrito.carrito;
 public class MainActivity extends AppCompatActivity {
 
     ImageButton btnExperiencias, btnBebidas, btnIngredientes,btnPanaderia,btnProductos,btnCongelados,btnCarnes,btnMariscos,btnshop;
+    TextView txtXp,txtBebidas,txtIngre,txtPan,txtProd,txtCon,txtCar,txtMar;
+
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -22,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        txtXp = findViewById(R.id.txtXp);
+        txtBebidas = findViewById(R.id.txtBed);
+        txtIngre = findViewById(R.id.txtIng);
+        txtPan = findViewById(R.id.txtpan);
+        txtProd = findViewById(R.id.txtProd);
+        txtCon = findViewById(R.id.txtCon);
+        txtCar = findViewById(R.id.txtCar);
+        txtMar = findViewById(R.id.txtMar);
         btnBebidas = findViewById(R.id.btnbeb);
         btnCarnes = findViewById(R.id.btncarnes);
         btnCongelados = findViewById(R.id.btncong);
@@ -39,15 +48,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         btnExperiencias.setOnClickListener(view -> {
-            String str = null;
+            String str = txtXp.getText().toString();
             Intent intent = new Intent(getApplicationContext(),showProductos.class);
-            intent.putExtra("Experiencias",str);
+            //findViewById(R.id.categoria).set;
             startActivity(intent);
         });
         btnBebidas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Bebidas(view);
+
+                String str = txtBebidas.getText().toString();
+                Intent intent = new Intent(getApplicationContext(),showProductos.class);
+                startActivity(intent);
             }
         });
         btnIngredientes.setOnClickListener(new View.OnClickListener() {
@@ -88,13 +100,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    /*public void experiencias(View view){
-        String str= "";
-        Intent intent = new Intent();
 
-        startActivity(new Intent(getApplicationContext(), showProductos.class));
-        intent.putExtra("Experiencias",str);
-    }*/
     public void Bebidas(View view){
         startActivity(new Intent(getApplicationContext(), showProductos.class));
     }public void Ingredientes(View view){

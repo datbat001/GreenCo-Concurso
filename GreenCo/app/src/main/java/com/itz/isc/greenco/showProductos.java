@@ -1,16 +1,15 @@
 package com.itz.isc.greenco;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -31,9 +30,9 @@ import java.util.List;
 
 public class showProductos extends AppCompatActivity  implements Adapter.onItemClickListener {
 
-    RecyclerView recyclerView;
+    RecyclerView recyclerView=null;
     List<Products> productos;
-    private static String JSON_URL = "https://androidexd.000webhostapp.com/loginphp/showProducts.php";
+    private static String JSON_URL = "https://androidexd.000webhostapp.com/loginphp/listProducts.php";
     Adapter adapter;
     ImageButton btnHome,btnShop;
     TextView Categoria;
@@ -49,8 +48,7 @@ public class showProductos extends AppCompatActivity  implements Adapter.onItemC
         btnShop = findViewById(R.id.carritoProductos);
 
         Intent intent = getIntent();
-       // String str = intent.getStringExtra("Experiencias").toString();
-        //Categoria.setText(str);
+
 
         productos = new ArrayList<>();
 
@@ -89,9 +87,11 @@ public class showProductos extends AppCompatActivity  implements Adapter.onItemC
                         JSONObject productObject = response.getJSONObject(i);
 
                         Products products = new Products();
+                        products.setId(productObject.getString("idProducto").toString());
                         products.setNomProd(productObject.getString("nomProducto").toString());
                         products.setDescProd(productObject.getString("descripcion").toString());
                         products.setPrecio(productObject.getString("precio").toString());
+                        products.setExistencia(productObject.getString("existencia").toString());
 
                         productos.add(products);
 
@@ -123,6 +123,8 @@ public class showProductos extends AppCompatActivity  implements Adapter.onItemC
     public void onItemClick(int position) {
         Intent intent = new Intent(this,Verproducto.class);
         Products clickedProduct = productos.get(position);
+        intent.putExtra("Id", clickedProduct.getId().toString());
+
 
         startActivity(intent);
     }

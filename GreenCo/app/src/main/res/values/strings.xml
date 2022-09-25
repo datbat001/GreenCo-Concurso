@@ -4,4 +4,12 @@
     <!-- Strings used for fragments for navigation -->
 
     <string name="productos">Productos Orgánicos</string>
+    <string name="experiencias_str">Experiencias</string>
+    <string name="bebidas_str">Bebidas</string>
+    <string name="ingredientes_str">Ingredientes</string>
+    <string name="panaderia_str">Panaderia</string>
+    <string name="productos_str">productos</string>
+    <string name="congelados_str">Congelados</string>
+    <string name="carnes_str">carnes</string>
+    <string name="mariscos_str">mariscos</string>
 </resources>

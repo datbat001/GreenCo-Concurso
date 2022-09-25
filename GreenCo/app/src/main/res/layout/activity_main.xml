@@ -1,13 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/drawer_main"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".MainActivity"
+    >
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!--<com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="987dp"
+        android:layout_gravity="start"
+        android:background="@color/middle_purple"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/activity_menu"
+        app:itemHorizontalPadding="20dp"
+        app:itemIconPadding="20dp"
+        app:itemIconSize="40dp"
+        app:itemVerticalPadding="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+    </com.google.android.material.navigation.NavigationView>-->
+<ScrollView
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
+
+
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintMainMenu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFF"
@@ -15,6 +65,8 @@
         tools:context=".MainActivity">
 
         <!-- layout de Header-->
+
+
 
         <TextView
             android:id="@+id/GrenCo"
@@ -31,33 +83,70 @@
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="0dp" />
 
-        <LinearLayout
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="51dp"
             android:background="#FFFFFF"
             android:orientation="horizontal"
+
             app:layout_constraintTop_toBottomOf="@+id/GrenCo"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="1dp">
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:paddingStart="150dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/white"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="100dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+
+                        android:src="@drawable/logo2"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/btnShop"
+                        android:layout_width="105dp"
+                        android:layout_height="51dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:src="@drawable/shoppping_cart" />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="987dp"
+        android:layout_gravity="start"
+        android:background="@color/middle_purple"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/activity_menu"
+        app:itemHorizontalPadding="20dp"
+        app:itemIconPadding="20dp"
+        app:itemIconSize="40dp"
+        app:itemVerticalPadding="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
 
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="93dp"
-                android:layout_height="51dp"
-                android:layout_weight="1"
-                android:src="@drawable/logo2" />
-
-            <ImageButton
-                android:id="@+id/btnShop"
-                android:layout_width="105dp"
-                android:layout_height="51dp"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:src="@drawable/shoppping_cart" />
-        </LinearLayout>
-
+    </com.google.android.material.navigation.NavigationView>
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -199,8 +288,12 @@
             </LinearLayout>
 
             <LinearLayout
+
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
+
+
+
                 android:background="@color/white"
                 android:orientation="vertical"
 
@@ -308,3 +401,4 @@
             app:layout_constraintTop_toBottomOf="@+id/idlayout"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>

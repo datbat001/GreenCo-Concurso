@@ -1,18 +1,14 @@
 package com.itz.isc.greenco.ListProducts;
 
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.RequestQueue;
@@ -21,20 +17,18 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageRequest;
 import com.android.volley.toolbox.Volley;
 import com.itz.isc.greenco.R;
-import com.itz.isc.greenco.Verproducto;
+
+import org.json.JSONArray;
 
 import java.util.List;
 
-public class Adapter extends RecyclerView.Adapter <Adapter.ViewHolder>
-    implements View.OnClickListener
-{
+public class Adapter extends RecyclerView.Adapter <Adapter.ViewHolder> {
 
-
-    private View.OnClickListener clickListener;
     LayoutInflater inflater;
     List<Products> products;
 
-    public Adapter(Context ctx, List<Products> products){
+    public Adapter(Context ctx, List<Products> products,
+                   Response.Listener<JSONArray> recyclerViewInterface){
         this.inflater = LayoutInflater.from(ctx);
         this.products = products;
     }
@@ -59,13 +53,6 @@ public class Adapter extends RecyclerView.Adapter <Adapter.ViewHolder>
         holder.productPrice.setText(products.get(position).getPrecio());
         //holder.imageProduct.setText(products.get(position).getImageURL());
 
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(inflater.getContext(), "Recycler click " + position,Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 
     @Override
@@ -73,16 +60,6 @@ public class Adapter extends RecyclerView.Adapter <Adapter.ViewHolder>
         return products.size();
     }
 
-    public void setOnClickListener(View.OnClickListener listener){
-        this.clickListener = listener;
-    }
-    @Override
-    public void onClick(View view) {
-        if (clickListener != null){
-            clickListener.onClick(view);
-        }
-
-    }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
 
@@ -98,6 +75,18 @@ public class Adapter extends RecyclerView.Adapter <Adapter.ViewHolder>
             productDesc = itemView.findViewById(R.id.product_desc);
             productPrice = itemView.findViewById(R.id.product_price);
             imageProduct = itemView.findViewById(R.id.product_image);
+           /* itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(mListener != null){
+                        int pos = getAdapterPosition();
+
+                        if(pos != RecyclerView.NO_POSITION){
+                            mListener.onItemClick(pos);
+                        }
+                    }
+                }
+            });*/
             URL = "https://androidexd.000webhostapp.com/media/logo2.png";
             RequestQueue queue = Volley.newRequestQueue(itemView.getContext());
             ImageRequest imageRequest = new ImageRequest(URL, new Response.Listener<Bitmap>() {

@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -100,8 +101,9 @@ public class showProductos extends AppCompatActivity {
                 }
 
                 recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-                adapter = new Adapter(getApplicationContext(),productos);
+                adapter = new Adapter(getApplicationContext(),productos,this);
                 recyclerView.setAdapter(adapter);
+
 
             }
         }, new Response.ErrorListener() {
@@ -115,4 +117,5 @@ public class showProductos extends AppCompatActivity {
         queue.add(jsonArrayRequest);
 
     }
+
 }

@@ -13,7 +13,7 @@ public class Verproducto extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verproducto);
 
-        String name = getIntent().getStringExtra("productName");
+        /*String name = getIntent().getStringExtra("productName");
         String productDesc = getIntent().getStringExtra("productName");
         String productPrice = getIntent().getStringExtra("productName");
         String imageProduct = getIntent().getStringExtra("productName");
@@ -26,6 +26,6 @@ public class Verproducto extends AppCompatActivity {
         nameProd.setText(name);
         descProd.setText(productDesc);
         precioProd.setText(productPrice);
-        imageProd.setImageResource(Integer.parseInt(imageProduct));
+        imageProd.setImageResource(Integer.parseInt(imageProduct));*/
     }
 }

@@ -29,7 +29,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class showProductos extends AppCompatActivity {
+public class showProductos extends AppCompatActivity  implements Adapter.onItemClickListener {
 
     RecyclerView recyclerView;
     List<Products> productos;
@@ -101,8 +101,9 @@ public class showProductos extends AppCompatActivity {
                 }
 
                 recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-                adapter = new Adapter(getApplicationContext(),productos,this);
+                adapter = new Adapter(getApplicationContext(),productos);
                 recyclerView.setAdapter(adapter);
+                adapter.setOnItemClickListener(showProductos.this);
 
 
             }
@@ -118,4 +119,11 @@ public class showProductos extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onItemClick(int position) {
+        Intent intent = new Intent(this,Verproducto.class);
+        Products clickedProduct = productos.get(position);
+
+        startActivity(intent);
+    }
 }

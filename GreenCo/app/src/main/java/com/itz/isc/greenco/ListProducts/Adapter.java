@@ -1,10 +1,12 @@
 package com.itz.isc.greenco.ListProducts;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,6 +19,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageRequest;
 import com.android.volley.toolbox.Volley;
 import com.itz.isc.greenco.R;
+import com.itz.isc.greenco.Verproducto;
 
 import org.json.JSONArray;
 
@@ -26,9 +29,17 @@ public class Adapter extends RecyclerView.Adapter <Adapter.ViewHolder> {
 
     LayoutInflater inflater;
     List<Products> products;
+    private onItemClickListener mListener;
 
-    public Adapter(Context ctx, List<Products> products,
-                   Response.Listener<JSONArray> recyclerViewInterface){
+    public interface onItemClickListener{
+        void onItemClick(int position);
+    }
+
+    public void setOnItemClickListener(onItemClickListener listener){
+        mListener = listener;
+    }
+
+    public Adapter(Context ctx, List<Products> products){
         this.inflater = LayoutInflater.from(ctx);
         this.products = products;
     }
@@ -37,9 +48,7 @@ public class Adapter extends RecyclerView.Adapter <Adapter.ViewHolder> {
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = inflater.inflate(R.layout.custom_list_layout,parent,false);
-        view.setOnClickListener(view1 -> {
 
-        });
         return new ViewHolder(view);
 
     }
@@ -67,7 +76,6 @@ public class Adapter extends RecyclerView.Adapter <Adapter.ViewHolder> {
         ImageView imageProduct;
         protected String URL;
 
-
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -75,18 +83,6 @@ public class Adapter extends RecyclerView.Adapter <Adapter.ViewHolder> {
             productDesc = itemView.findViewById(R.id.product_desc);
             productPrice = itemView.findViewById(R.id.product_price);
             imageProduct = itemView.findViewById(R.id.product_image);
-           /* itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if(mListener != null){
-                        int pos = getAdapterPosition();
-
-                        if(pos != RecyclerView.NO_POSITION){
-                            mListener.onItemClick(pos);
-                        }
-                    }
-                }
-            });*/
             URL = "https://androidexd.000webhostapp.com/media/logo2.png";
             RequestQueue queue = Volley.newRequestQueue(itemView.getContext());
             ImageRequest imageRequest = new ImageRequest(URL, new Response.Listener<Bitmap>() {
@@ -101,10 +97,23 @@ public class Adapter extends RecyclerView.Adapter <Adapter.ViewHolder> {
 
                 }
             });
-
             queue.add(imageRequest);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if(mListener != null){
+                        int position = getAdapterPosition();
+                        if (position != RecyclerView.NO_POSITION){
+                            mListener.onItemClick(position);
+                        }
+                    }
+                }
+            });
+
         }
+
     }
+
 
 
 }

@@ -3,12 +3,55 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/arrow_left.xml" value="0.3225" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/homeproductos.xml" value="0.2905" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/ic_menu_camera.xml" value="0.351" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/profile_menup.xml" value="0.275" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/drawable/side_nav_bar.xml" value="0.351" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_carrito.xml" value="0.18541666666666667" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_carrito2.xml" value="0.1" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_inicio.xml" value="0.1" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_loginr.xml" value="0.13" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_main2.xml" value="0.23513513513513515" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_main_menu.xml" value="0.23513513513513515" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_menu_slide.xml" value="0.17144808743169399" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_menup.xml" value="0.2" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_perfil.xml" value="0.23513513513513515" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_productos.xml" value="0.3482789855072464" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_registro.xml" value="0.23513513513513515" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_verproducto.xml" value="0.3482789855072464" />
         <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/adminprofile.xml" value="0.18541666666666667" />
+<<<<<<< HEAD
         <entry key="..\:/Users/david/Desktop/weas/code/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_carrito2.xml" value="0.25" />
+=======
+<<<<<<< Updated upstream
+        <entry key="..\:/Users/david/Desktop/weas/code/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_carrito2.xml" value="0.1" />
+=======
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/app_bar_menu_slide.xml" value="0.17144808743169399" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/content_inicio.xml" value="0.1" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/content_main.xml" value="0.23513513513513515" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/content_menu_slide.xml" value="0.17144808743169399" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/custom_list_layout.xml" value="0.23513513513513515" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/fragment_beneficios.xml" value="0.1195945945945946" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/fragment_favoritos.xml" value="0.1" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/fragment_gallery.xml" value="0.17144808743169399" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/fragment_home.xml" value="0.17144808743169399" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/fragment_slideshow.xml" value="0.17144808743169399" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/fragment_verificacion.xml" value="0.1195945945945946" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/header.xml" value="0.18" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/menup.xml" value="0.2" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/nav_header_inicio.xml" value="0.18" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/nav_header_main.xml" value="0.23513513513513515" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/layout/nav_header_menu_slide.xml" value="0.17144808743169399" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/menu/activity_main2_drawer.xml" value="0.12027027027027028" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/menu/activity_main_drawer.xml" value="0.23513513513513515" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/menu/activity_menu.xml" value="0.25" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/menu/inicio.xml" value="0.12027027027027028" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/menu/main_activity2.xml" value="0.23513513513513515" />
+        <entry key="..\:/USUARIOS/Ulises/OneDrive/Documentos/GitHub/GreenCo-Concurso/GreenCo/app/src/main/res/menu/menu_slide.xml" value="0.23513513513513515" />
+>>>>>>> Stashed changes
+>>>>>>> ee994c9b4f89b86db3ae1f2b3dc1f928c0b79117
         <entry key="..\:/Users/david/Desktop/weas/code/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_loginr.xml" value="0.209375" />
         <entry key="..\:/Users/david/Desktop/weas/code/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/david/Desktop/weas/code/GreenCo-Concurso/GreenCo/app/src/main/res/layout/activity_perfil.xml" value="0.19927536231884058" />

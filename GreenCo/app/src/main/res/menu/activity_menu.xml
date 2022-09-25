@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn="navigation_view"
+    >
+
+        <group
+            android:checkableBehavior="single"
+            >
+
+        <item
+            android:id="@+id/Opcion_Favoritos"
+            android:icon="@drawable/etiqueta2"
+            android:title="@string/Opcion_favoritos"
+            />
+        <item
+            android:id="@+id/Opcion_Beneficios"
+            android:icon="@drawable/etiqueta"
+            android:title="@string/Opcion_beneficios"
+            />
+        <item
+            android:id="@+id/Opcion_Promociones"
+            android:icon="@drawable/caja_regalo"
+            android:title="@string/Opcion_promociones"
+            />
+        <item
+            android:id="@+id/Opcion_Verificaion"
+            android:icon="@drawable/key"
+            android:title="@string/Opcion_verificacion"
+            />
+        <item
+            android:id="@+id/Opcion_Salir"
+            android:icon="@drawable/icono_salir"
+            android:title="@string/Opcion_salir"
+            />
+        </group>
+    </menu>

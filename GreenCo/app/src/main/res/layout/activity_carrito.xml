@@ -33,6 +33,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/idCarritoRecycler"
             android:layout_width="148dp"
             android:layout_height="50dp"
             app:layout_constraintStart_toStartOf="parent"

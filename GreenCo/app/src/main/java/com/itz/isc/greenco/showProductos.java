@@ -18,8 +18,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.itz.isc.greenco.Carrito.carrito;
-import com.itz.isc.greenco.ListProducts.Adapter;
-import com.itz.isc.greenco.ListProducts.Products;
+import com.itz.isc.greenco.adapters.Adapter;
+import com.itz.isc.greenco.models.Products;
 
 import org.json.JSONArray;
 import org.json.JSONException;

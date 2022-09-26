@@ -17,11 +17,11 @@
         android:theme="@style/Theme.MaterialComponents.NoActionBar"
         tools:targetApi="30">
         <activity
+            android:name=".Carrito.carrito"
+            android:exported="true"/>
+        <activity
             android:name=".Verproducto"
             android:exported="true" />
-        <activity
-            android:name=".Carrito.carrito"
-            android:exported="false" />
         <activity
             android:name=".PRODUCTOS.Botones"
             android:exported="false" />

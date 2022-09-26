@@ -1,7 +1,9 @@
 package com.itz.isc.greenco;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -17,7 +19,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.itz.isc.greenco.ListProducts.Products;
+import com.itz.isc.greenco.Carrito.carrito;
+import com.itz.isc.greenco.models.Products;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -26,6 +29,7 @@ public class Verproducto extends AppCompatActivity {
 
     ImageView imageView;
     TextView nombreVer;
+    TextView nombreTop;
     TextView precioVer;
     TextView descVer;
     EditText editText;
@@ -50,8 +54,37 @@ public class Verproducto extends AppCompatActivity {
         btnmenos = findViewById(R.id.buttonmenos);
         btncarrito = findViewById(R.id.buttonshopver);
         editText = findViewById(R.id.editTextNumberver);
+        nombreTop = findViewById(R.id.nomProdverTop);
 
         extractProducts(id);
+        btnmas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String value = editText.getText().toString();
+                int finalValue= Integer.parseInt(value);
+                int suma = finalValue +1;
+                String sumaStr = String.valueOf(suma);
+                editText.setText(sumaStr);
+            }
+        });
+
+        btnmenos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String value = editText.getText().toString();
+                int finalValue= Integer.parseInt(value);
+                if(finalValue > 1){
+                    int res = finalValue -1;
+                    String sumaStr = String.valueOf(res);
+                    editText.setText(sumaStr);
+                }
+            }
+        });
+        btncarrito.setOnClickListener(view -> {
+            Intent intent;
+            intent = new Intent(getApplicationContext(), carrito.class);
+            startActivity(intent);
+        });
     }
 
     private void extractProducts(String Id) {
@@ -71,7 +104,8 @@ public class Verproducto extends AppCompatActivity {
                             nombreVer.setText(item.getString("nomProducto"));
                             descVer.setText(item.getString("descripcion"));
                             precioVer.setText(item.getString("precio"));
-                            editText.setText(item.getString("existencia"));
+                            nombreTop.setText(item.getString("nomProducto"));
+                            //editText.setText(item.getString("existencia"));
                             cargarImagen(item.getString("imageName").toString());
 
                         } catch (JSONException e) {

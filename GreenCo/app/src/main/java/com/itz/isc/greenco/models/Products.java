@@ -1,4 +1,4 @@
-package com.itz.isc.greenco.ListProducts;
+package com.itz.isc.greenco.models;
 
 public class Products {
 

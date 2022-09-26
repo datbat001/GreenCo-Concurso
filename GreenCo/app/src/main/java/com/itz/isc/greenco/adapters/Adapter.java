@@ -1,4 +1,4 @@
-package com.itz.isc.greenco.ListProducts;
+package com.itz.isc.greenco.adapters;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,6 +16,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.ImageRequest;
 import com.android.volley.toolbox.Volley;
+import com.itz.isc.greenco.models.Products;
 import com.itz.isc.greenco.R;
 
 import java.util.List;

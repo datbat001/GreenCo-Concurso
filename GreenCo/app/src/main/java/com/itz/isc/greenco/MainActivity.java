@@ -22,12 +22,13 @@ import com.google.android.material.navigation.NavigationView;
 import com.itz.isc.greenco.Carrito.carrito;
 import com.itz.isc.greenco.LOGIN.login;
 import com.itz.isc.greenco.fragmentos.Beneficios;
+import com.itz.isc.greenco.fragmentos.Home;
 import com.itz.isc.greenco.fragmentos.Promociones;
 import com.itz.isc.greenco.fragmentos.Verificacion;
 import com.itz.isc.greenco.fragmentos.favoritos;
 
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
     DrawerLayout drawerLayout;
     Toolbar  toolbar;
@@ -38,7 +39,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             btnMariscos,btnshop,profile;
 
 
-
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (drawerToggle.onOptionsItemSelected(item)){
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -62,11 +69,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             toolbar = findViewById(R.id.toolbar);
 
-            drawerLayout = findViewById(R.id.drawer_main);
+            drawerLayout = findViewById(R.id.drawer_mainp);
 
             navigationView = findViewById(R.id.nav_view);
-            navigationView.setNavigationItemSelectedListener(this);
-            navigationView.setItemIconTintList(null);
+
 
             drawerToggle = new ActionBarDrawerToggle(this, drawerLayout,toolbar,
                     R.string.Open,R.string.Close);
@@ -76,11 +82,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             drawerToggle.syncState();
 
-            if(savedInstanceState == null){
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new favoritos()).commit();
+            if(savedInstanceState ==null){
+                getSupportFragmentManager().beginTransaction().replace(R.id.mainContent,
+                        new Home()).commit();
                 navigationView.setCheckedItem(R.id.Opcion_Favoritos);
             }
+
+
+
 
 
             //---------------Botones del main----------------------
@@ -144,7 +153,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
     }
+
     @Override
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)){
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }
+        else {
+            super.onBackPressed();
+        }
+    }
+        @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         try {
 
@@ -208,7 +227,43 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-
-
-
+//    @Override
+//    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//            switch (item.getItemId()){
+//                case R.id.Opcion_Favoritos:
+//                {
+//                    getSupportFragmentManager().beginTransaction().replace(R.id.mainContent,
+//                            new favoritos()).commit();
+//                    navigationView.bringToFront();
+//                    break;
+//                }
+//                case R.id.Opcion_Beneficios:
+//                {
+//                    Toast.makeText(MainActivity.this,"Beneficios",Toast.LENGTH_SHORT).show();
+//                    navigationView.bringToFront();
+//                    break;
+//                }
+//                case R.id.Opcion_Promociones:
+//                {
+//                    Toast.makeText(MainActivity.this,"Promociones",Toast.LENGTH_SHORT).show();
+//                    navigationView.bringToFront();
+//                    break;
+//                }
+//                case R.id.Opcion_Verificaion:
+//                {
+//                    Toast.makeText(MainActivity.this,"Verificacion",Toast.LENGTH_SHORT).show();
+//                    navigationView.bringToFront();
+//                    break;
+//                }
+//                case R.id.Opcion_Salir:
+//                {
+//                    startActivity(new Intent(getApplicationContext(),login.class));
+//                    Toast.makeText(MainActivity.this,"Cerraste sesion",Toast.LENGTH_SHORT).show();
+//                    navigationView.bringToFront();
+//                    break;
+//                }
+//
+//            }
+//            return false;
+//        }
 }

@@ -15,15 +15,15 @@
         android:layout_width="116dp"
         android:layout_height="125dp"
         android:background="@drawable/profile_menup"
-        tools:layout_editor_absoluteX="-12dp"
-        tools:layout_editor_absoluteY="26dp" />
+        tools:layout_editor_absoluteX="-11dp"
+        tools:layout_editor_absoluteY="27dp" />
 
     <ImageView
         android:id="@+id/imageView14"
         android:layout_width="145dp"
         android:layout_height="148dp"
         app:srcCompat="@drawable/cintilla"
-        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteX="101dp"
         tools:layout_editor_absoluteY="16dp" />
 
     <TextView
@@ -45,7 +45,7 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="71dp" />
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="70dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

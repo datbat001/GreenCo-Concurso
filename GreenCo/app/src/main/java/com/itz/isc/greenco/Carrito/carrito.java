@@ -1,9 +1,10 @@
 package com.itz.isc.greenco.Carrito;
 
-import androidx.appcompat.app.AppCompatActivity;
-import com.itz.isc.greenco.R;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.itz.isc.greenco.R;
 
 public class carrito extends AppCompatActivity {
 
@@ -11,6 +12,6 @@ public class carrito extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_carrito2);
+        setContentView(R.layout.activity_carrito);
     }
 }

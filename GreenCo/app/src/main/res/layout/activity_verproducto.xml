@@ -16,6 +16,19 @@
         android:layout_height="match_parent"
         android:background="@color/white"
         android:orientation="vertical">
+        <TextView
+            android:id="@+id/nomProdverTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E5C2F2"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#4A2748"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar"
@@ -34,35 +47,40 @@
 
                 app:toolbarId="@+id/toolbar">
 
+
+                />
+
                 <ImageView
-                    android:id="@+id/img_prod"
+                    android:id="@+id/img_prodver"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:background="@color/white"
-                    android:src="@drawable/descarga" />
+                    android:src="@drawable/descarga"/>
 
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
+
             </com.google.android.material.appbar.CollapsingToolbarLayout>
         </com.google.android.material.appbar.AppBarLayout>
 
+
         <TextView
-            android:id="@+id/nomProd"
+            android:id="@+id/nomProdver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
-            android:text="TextView"
+            android:text="Nombre del Producto"
             android:textColor="#4A2748"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/descProd"
+            android:id="@+id/descProdver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
@@ -75,15 +93,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:padding="15dp">
+            android:padding="15dp"
+            android:paddingRight="25dp">
 
             <TextView
-                android:id="@+id/precProd"
+                android:id="@+id/precProdver"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
                 android:gravity="center"
                 android:text="TextView"
-                android:layout_marginRight="25dp"
                 android:textColor="#4A2748"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -95,15 +114,15 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/buttonmenos"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@null"
+                    android:background="#00000000"
                     android:text="-" />
 
                 <EditText
-                    android:id="@+id/editTextNumber"
-                    android:layout_width="70dp"
+                    android:id="@+id/editTextNumberver"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:background="@null"
                     android:ems="10"
@@ -113,15 +132,15 @@
                     android:textColor="#4A2748" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/buttonmas"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@null"
+                    android:background="#00000000"
                     android:text="+" />
             </LinearLayout>
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/buttonshopver"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="25dp"

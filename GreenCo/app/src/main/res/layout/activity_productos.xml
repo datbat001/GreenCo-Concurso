@@ -21,8 +21,9 @@
             android:background="#E5C2F2"
             android:text="@string/productos"
             android:textAlignment="center"
-            android:textColor="#FFFFFF"
+            android:textColor="#4A2748"
             android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />

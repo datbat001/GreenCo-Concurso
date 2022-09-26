@@ -14,43 +14,48 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GreenCo"
+        android:theme="@style/Theme.MaterialComponents.NoActionBar"
         tools:targetApi="30">
-
+        <activity
+            android:name=".Carrito.carrito"
+            android:exported="true"/>
         <activity
             android:name=".Verproducto"
             android:exported="true" />
-        <activity
-            android:name=".Carrito.carrito"
-            android:exported="false" />
         <activity
             android:name=".PRODUCTOS.Botones"
             android:exported="false" />
         <activity
             android:name=".LOGIN.login"
             android:exported="true">
-
-            <!-- quitar comentario para que la app empiece en el login -->
-            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            -->
+
+            <!-- quitar comentario para que la app empiece en el login -->
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
         </activity>
         <activity
             android:name=".showProductos"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:theme="@style/Theme.GreenCo.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
+            <!--
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+            -->
         </activity>
         <activity
             android:name=".LOGIN.insertar"
